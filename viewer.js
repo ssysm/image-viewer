@@ -5,10 +5,10 @@ for (var i = 0; i <= total_class -1; i++) {
 	console.log(i)
 	var image_src = document.getElementsByClassName('viewer-image')[i].getAttribute('src');
 	container.insertAdjacentHTML('beforeend',`
-		<div id="myModal" class="modal modal-main modal-number-${i}">
+		<div id="myModal" class="viewer-modal modal-main modal-number-${i}">
 		<!-- Modal content -->
-			<div class="modal-content">
-				<span class="close" onclick="onClose(${i})">&times;</span>
+			<div class="viewer-modal-content">
+				<span class="viewer-modal-close" onclick="onClose(${i})">&times;</span>
 				<img class='modal-image' src='${image_src}' >
 			</div>
 		</div>
