@@ -1,2 +1,2 @@
 # image-viewer
-An Simple Image Viewer
+A Simple Modal Image Viewer
