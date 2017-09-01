@@ -1,8 +1,6 @@
 var total_class = document.querySelectorAll('.viewer-image').length
-console.log(total_class)
 var container = document.getElementById('viewer-container')
 for (var i = 0; i <= total_class -1; i++) {
-	console.log(i)
 	var image_src = document.getElementsByClassName('viewer-image')[i].getAttribute('src');
 	container.insertAdjacentHTML('beforeend',`
 		<div id="myModal" class="viewer-modal modal-main modal-number-${i}">
