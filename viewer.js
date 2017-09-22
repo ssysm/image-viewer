@@ -14,7 +14,7 @@ for (var i = 0; i <= total_class -1; i++) {
 	document.getElementsByClassName('viewer-image')[i].setAttribute("onclick","onView("+i+")")
 }
 function onView(id) {
-	var modal = document.getElementsByClassName('modal')[id];
+	var modal = document.getElementsByClassName('viewer-modal')[id];
 	modal.style.display="block";
 	window.onclick = function(event) {
     if (event.target == modal) {
@@ -23,6 +23,6 @@ function onView(id) {
 }
 }
 function onClose(id){
-	var modal = document.getElementsByClassName('modal')[id];
+	var modal = document.getElementsByClassName('viewer-modal')[id];
 	modal.style.display = "none";
 }
