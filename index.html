@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Image Viewer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="viewer.css">
+	<title>Image Viewer</title>
 </head>
 <body>
 <img src="http://via.placeholder.com/350x150" class="viewer-image">
@@ -11,6 +13,16 @@
 <div id="viewer-container">
 
 </div>
-<script type="text/javascript" src='viewer.js'></script>
 </body>
+<script type="text/javascript" src='viewer.js'></script>
+<script type="text/javascript">
+	new viewer({
+		class : 'viewer-image',
+		scale:'75%',
+		textEnable : true,
+		text: `
+		我在
+		`
+	})
+</script>
 </html>
